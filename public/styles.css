@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #0d6efd;
+  --dark: #111;
+  --gray: #666;
+  --light: #f5f7fa;
+  --white: #fff;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--light);
+  color: var(--dark);
+}
+
+.header {
+  background: var(--white);
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  z-index: 10;
+}
+
+.header h1 {
+  color: var(--primary);
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu ul li a:hover {
+  color: var(--primary);
+}
+
+
+.search-form {
+  display: flex;
+  gap: 8px;
+}
+
+.search-form input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.search-form button {
+  padding: 8px 15px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-form button:hover {
+  background: #0b5ed7;
+}
+
+.main {
+  padding: 40px;
+}
+
+.banner img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.cars h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.car {
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  position: relative;
+}
+
+.car:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.car img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.car h3 {
+  padding: 15px;
+  font-size: 18px;
+}
+
+.car p {
+  padding: 0 15px 10px;
+  color: var(--gray);
+}
+
+.car p:last-child {
+  font-weight: bold;
+  color: var(--primary);
+  font-size: 16px;
+}
+
+.car::after {
+  content: "Ver detalhes";
+  display: block;
+  margin: 15px;
+  padding: 10px;
+  text-align: center;
+  background: var(--primary);
+  color: white;
+  border-radius: 6px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.car:hover::after {
+  opacity: 1;
+}
+
+.footer {
+  margin-top: 40px;
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
