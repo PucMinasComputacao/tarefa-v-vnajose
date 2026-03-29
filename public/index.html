@@ -1,117 +1,362 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AutoCar - Venda de Carros</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoPrime — Concessionária de Luxo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header class="header">
-    <h1>AutoCar</h1>
+  <header class="cabecalho">
+    <div class="header-logo">
+      <div class="logo-mark">AP</div>
+      <div class="logo-text">Auto<span>Prime</span></div>
+    </div>
 
-    <button class="menu-toggle">☰</button>
-
-    <nav class="menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Carros</a></li>
-        <li><a href="#">Ofertas</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
+    <nav class="menu-principal">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#financiamento">Financiamento</a>
+      <a href="#contato">Contato</a>
     </nav>
 
-    <form class="search-form">
-      <input type="text" placeholder="Buscar carro..." required>
-      <button type="submit">Pesquisar</button>
-    </form>
+    <div class="header-cta">
+      <button class="btn-outline">Login</button>
+      <button class="btn-gold">Agendar Test Drive</button>
+    </div>
   </header>
 
-  <main class="main">
-
-    <section class="banner">
-      <img src="https://picsum.photos/id/1071/1200/300" alt="Banner">
-
-      <div class="banner-overlay"></div>
-
-      <div class="banner-text">
-        <h2>Encontre seu carro ideal</h2>
-        <p>Ofertas imperdíveis todos os dias</p>
+  <main id="inicio">
+    <section class="hero">
+      <img
+        class="hero-img"
+        src="https://picsum.photos/id/111/1600/900"
+        alt="Carro de luxo em pista"
+      />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-tag">✦ Concessionária Premium</div>
+        <h1 class="hero-title">
+          Dirija o que<br />você <span class="accent">merece.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Experiência incomparável em veículos de alto padrão. Encontre o carro
+          dos seus sonhos com atendimento exclusivo e condições únicas.
+        </p>
+        <div class="hero-actions">
+          <a href="#catalogo" class="btn-gold">Ver Catálogo</a>
+          <a href="#financiamento" class="btn-outline">Simular Financiamento</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">500+</div>
+          <div class="stat-label">Veículos</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">12k</div>
+          <div class="stat-label">Clientes</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">18</div>
+          <div class="stat-label">Anos de mercado</div>
+        </div>
       </div>
     </section>
 
-    <section class="cars">
-      <h2>Carros em Destaque</h2>
-
-      <div class="car-list">
-
-        <article class="car">
-          <img src="https://picsum.photos/id/1011/300/200" alt="Carro" loading="lazy">
-          <h3>Honda Civic</h3>
-          <p>Ano: 2022</p>
-          <p>Preço: R$ 120.000</p>
-        </article>
-
-        <article class="car">
-          <img src="https://picsum.photos/id/1015/300/200" alt="Carro" loading="lazy">
-          <h3>Toyota Corolla</h3>
-          <p>Ano: 2023</p>
-          <p>Preço: R$ 130.000</p>
-        </article>
-
-        <article class="car">
-          <img src="https://picsum.photos/id/1020/300/200" alt="Carro" loading="lazy">
-          <h3>Chevrolet Onix</h3>
-          <p>Ano: 2021</p>
-          <p>Preço: R$ 75.000</p>
-        </article>
-
+    <section class="intro-section" id="sobre">
+      <div class="intro-text">
+        <span class="section-tag">✦ Quem Somos</span>
+        <h2>A referência em veículos premium no Brasil</h2>
+        <p>
+          A AutoPrime nasceu da paixão por automóveis e do compromisso em
+          oferecer uma experiência de compra verdadeiramente diferenciada.
+          Trabalhamos com as marcas mais desejadas do mundo, garantindo
+          qualidade certificada e transparência total em cada negociação.
+        </p>
+        <p>
+          Nosso showroom de 3.000 m² abriga uma curadoria exclusiva de veículos
+          novos e seminovos, todos inspecionados por especialistas e com laudo
+          completo. Atendimento presencial, online ou por WhatsApp — do jeito
+          que você preferir.
+        </p>
+        <a href="#catalogo" class="btn-gold" style="margin-top:12px; display:inline-block;">Conheça nosso estoque</a>
       </div>
-    </section>
-
-    <section class="cars">
-      <h2>Últimos Anúncios</h2>
-
-      <div class="car-list">
-
-        <article class="car">
-          <img src="https://picsum.photos/id/1035/300/200" alt="Carro" loading="lazy">
-          <h3>Ford Ka</h3>
-          <p>Ano: 2020</p>
-          <p>Preço: R$ 50.000</p>
-        </article>
-
-        <article class="car">
-          <img src="https://picsum.photos/id/1043/300/200" alt="Carro" loading="lazy">
-          <h3>Hyundai HB20</h3>
-          <p>Ano: 2022</p>
-          <p>Preço: R$ 70.000</p>
-        </article>
-
-        <article class="car">
-          <img src="https://picsum.photos/id/1050/300/200" alt="Carro" loading="lazy">
-          <h3>Jeep Compass</h3>
-          <p>Ano: 2023</p>
-          <p>Preço: R$ 160.000</p>
-        </article>
-
+      <div class="intro-features">
+        <span class="section-tag">✦ Por que escolher a AutoPrime?</span>
+        <div class="feature-item">
+          <div class="feature-icon">🛡️</div>
+          <div>
+            <h4>Garantia Total</h4>
+            <p>Todos os veículos com garantia de fábrica ou garantia AutoPrime de 12 meses.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">💳</div>
+          <div>
+            <h4>Financiamento Facilitado</h4>
+            <p>Taxas a partir de 0,79% a.m. com aprovação em até 2 horas.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🔍</div>
+          <div>
+            <h4>Inspeção Certificada</h4>
+            <p>Mais de 150 pontos verificados por engenheiros automotivos especializados.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🚗</div>
+          <div>
+            <h4>Test Drive Premium</h4>
+            <p>Experimente o veículo antes de comprar — inclusive com entrega em domicílio.</p>
+          </div>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="footer">
-    <p>© 2026 AutoCar - Todos os direitos reservados</p>
+  <section class="cars-section" id="catalogo">
+    <div class="section-header">
+      <div>
+        <span class="section-tag">✦ Destaques</span>
+        <h2>Veículos em destaque</h2>
+      </div>
+      <a href="#">Ver todos os veículos →</a>
+    </div>
+
+    <div class="cards-grid">
+
+      <article class="car-card">
+        <div class="card-image">
+          <img src="imagens/cars/BMW 320i.jpg" alt="BMW 320i M Sport" />
+          <span class="card-badge">Novo</span>
+        </div>
+        <div class="card-body">
+          <p class="car-brand">BMW</p>
+          <h3>320i M Sport G20</h3>
+          <p>Um sedã premium de destaque no Brasil, unindo motor 2.0 TwinPower Turbo de 184 cv, tração traseira e câmbio automático de 8 marchas</p>
+          <div class="car-specs">
+            <div class="spec">
+              <span class="spec-value">184 cv</span>
+              <span class="spec-label">Potência</span>
+            </div>
+            <div class="spec">
+              <span class="spec-value">6,9 s</span>
+              <span class="spec-label">0–100 km/h</span>
+            </div>
+            <div class="spec">
+              <span class="spec-value">2024</span>
+              <span class="spec-label">Ano</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="car-price">
+              R$ 389.900,00
+              <span>ou 60x R$ 7.1900,00</span>
+            </div>
+            <button class="btn-card">Ver detalhes</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="car-card">
+        <div class="card-image">
+          <img src="imagens/cars/Range Rover.jpg" alt="Land Rover" />
+          <span class="card-badge">Destaque</span>
+        </div>
+        <div class="card-body">
+          <p class="car-brand">Land Rover</p>
+          <h3>Range Rover Velar P340 HSE R-DYNAMIC</h3>
+          <p>SUV de luxo sofisticado, equipado com um motor 3.0 V6 Turbo/Supercharger de 340 cv e sistema híbrido leve (MHEV).</p>
+          <div class="car-specs">
+            <div class="spec">
+              <span class="spec-value">340 cv</span>
+              <span class="spec-label">Potência</span>
+            </div>
+            <div class="spec">
+              <span class="spec-value">6,3 s</span>
+              <span class="spec-label">0–100 km/h</span>
+            </div>
+            <div class="spec">
+              <span class="spec-value">2024</span>
+              <span class="spec-label">Ano</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="car-price">
+              R$ 419.800,00
+              <span>ou 60x R$ 7.020,00</span>
+            </div>
+            <button class="btn-card">Ver detalhes</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="car-card">
+        <div class="card-image">
+          <img src="imagens/cars/Porsche 911.jpg" alt="Porsche 911" />
+          <span class="card-badge">Seminovo</span>
+        </div>
+        <div class="card-body">
+          <p class="car-brand">Porsche</p>
+          <h3>911 CARRERA T 992.1</h3>
+          <p>Um ícone esportivo equipado com um motor 3.0L Boxer biturbo de 6 cilindros, entregando 401 cv de potência e 450 Nm de torque.</p>
+          <div class="car-specs">
+            <div class="spec">
+              <span class="spec-value">401 cv</span>
+              <span class="spec-label">Potência</span>
+            </div>
+            <div class="spec">
+              <span class="spec-value">4,1 s</span>
+              <span class="spec-label">0–100 km/h</span>
+            </div>
+            <div class="spec">
+              <span class="spec-value">2023</span>
+              <span class="spec-label">Ano</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="car-price">
+              R$ 799.000,00
+              <span>ou 60x R$ 13.430,00</span>
+            </div>
+            <button class="btn-card">Ver detalhes</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="newsletter-section" id="financiamento">
+    <div class="newsletter-text">
+      <span class="section-tag">✦ Fique por dentro</span>
+      <h2>Receba ofertas exclusivas antes de todo mundo</h2>
+      <p>
+        Cadastre-se e tenha acesso antecipado a lançamentos, promoções especiais
+        e condições de financiamento que não chegam ao grande público.
+      </p>
+    </div>
+    <div class="newsletter-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" placeholder="Seu nome" />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="seu@email.com" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="telefone">Telefone / WhatsApp</label>
+          <input type="tel" id="telefone" placeholder="(31) 9 0000-0000" />
+        </div>
+        <div class="form-group">
+          <label for="interesse">Interesse</label>
+          <select id="interesse">
+            <option value="">Selecione uma categoria</option>
+            <option>SUV Premium</option>
+            <option>Sedã Executivo</option>
+            <option>Esportivos</option>
+            <option>Elétricos / Híbridos</option>
+            <option>Seminovos</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn-gold" type="button">Quero receber ofertas exclusivas</button>
+    </div>
+  </section>
+
+  <footer class="rodape" id="contato">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">Auto<span>Prime</span></div>
+        <p>
+          A maior concessionária premium do Centro-Oeste. Showroom em Belo
+          Horizonte, Contagem e Betim. Atendemos todo o Brasil com entrega
+          domiciliar.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">📸</a>
+          <a href="#" class="social-link" aria-label="Facebook">👍</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+          <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#financiamento">Financiamento</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Marcas</h4>
+        <ul>
+          <li><a href="#">BMW</a></li>
+          <li><a href="#">Mercedes-Benz</a></li>
+          <li><a href="#">Porsche</a></li>
+          <li><a href="#">Audi</a></li>
+          <li><a href="#">Volvo</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="#">📍 Av. do Contorno, 5500 — BH</a></li>
+          <li><a href="#">📞 (31) 3030-5000</a></li>
+          <li><a href="#">✉️ vendas@autoprime.com.br</a></li>
+          <li><a href="#">🕐 Seg–Sáb: 8h às 19h</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 <span>AutoPrime</span>. Todos os direitos reservados.</p>
+      <p>CNPJ 00.000.000/0001-00 · Política de Privacidade · Termos de Uso</p>
+    </div>
   </footer>
 
   <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.menu');
-
+    const toggle  = document.getElementById('menu-toggle');
+    const menu    = document.getElementById('menu-principal');
+    const overlay = document.getElementById('menu-overlay');
+ 
+    function openMenu() {
+      menu.classList.add('menu-aberto');
+      overlay.classList.add('ativo');
+      toggle.classList.add('ativo');
+      toggle.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      menu.classList.remove('menu-aberto');
+      overlay.classList.remove('ativo');
+      toggle.classList.remove('ativo');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+ 
     toggle.addEventListener('click', () => {
-      menu.classList.toggle('active');
+      menu.classList.contains('menu-aberto') ? closeMenu() : openMenu();
     });
+    overlay.addEventListener('click', closeMenu);
+    document.querySelectorAll('.nav-link').forEach(link => link.addEventListener('click', closeMenu));
   </script>
 
 </body>
